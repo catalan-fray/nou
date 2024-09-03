@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maricha babosa</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #444;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: red;
+            font-size: 48px;
+        }
+        .button {
+            font-size: 20px;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .button.yes {
+            background-color: #ff6f61;
+            color: white;
+            box-shadow: 0 5px 10px rgba(255, 111, 97, 0.3);
+        }
+        .button.no {
+            background-color: #ffd700;
+            color: white;
+            box-shadow: 0 5px 10px rgba(255, 215, 0, 0.3);
+        }
+        .button.no:hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Maricha babosa <span class="heart"></span></h1>
+    
+    </div>
+
+    <script>
+        document.querySelector('.no').addEventListener('mouseover', function() {
+            this.style.top = Math.random() * window.innerHeight + 'px';
+            this.style.left = Math.random() * window.innerWidth + 'px';
+        });
+    </script>
+</body>
+</html>
